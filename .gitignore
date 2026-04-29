@@ -1,0 +1,21 @@
+# Dataset (too large for git — students add their own)
+data/AmesHousing.csv
+data/sample.csv
+
+# Trained model output
+model/
+metrics/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Environments
+.env
+.venv/
+venv/
