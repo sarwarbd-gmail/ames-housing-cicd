@@ -1,5 +1,5 @@
 # Dataset (too large for git — students add their own)
-data/AmesHousing.csv
+#data/AmesHousing.csv
 data/sample.csv
 
 # Trained model output
