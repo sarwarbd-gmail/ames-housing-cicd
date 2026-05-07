@@ -28,6 +28,11 @@ N_ESTIMATORS  = 200
 MAX_DEPTH     = 5
 LEARNING_RATE = 0.05
 
+# AFTER (student's improvement)
+N_ESTIMATORS  = 300
+MAX_DEPTH     = 5
+LEARNING_RATE = 0.05
+
 # ────────────────────────────────────────────────────────────────────────────
 
 # Columns we actually use (keeps the script simple and readable)
