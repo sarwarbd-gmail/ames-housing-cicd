@@ -29,9 +29,9 @@ MAX_DEPTH     = 5
 LEARNING_RATE = 0.05
 
 # AFTER (student's improvement)
-N_ESTIMATORS  = 300
-MAX_DEPTH     = 5
-LEARNING_RATE = 0.05
+N_ESTIMATORS  = 400 #300 #old
+MAX_DEPTH     = 7 #5 #old
+LEARNING_RATE = 0.04 #0.05 #old
 
 # ────────────────────────────────────────────────────────────────────────────
 
