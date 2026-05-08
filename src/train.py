@@ -19,16 +19,16 @@ from sklearn.preprocessing import LabelEncoder
 
 # ── Hyperparameters ──────────────────────────────────────────────────────────
 # BEFORE (original)
-N_ESTIMATORS  = 100
-MAX_DEPTH     = 4
-LEARNING_RATE = 0.1
+# N_ESTIMATORS  = 100
+# MAX_DEPTH     = 4
+# LEARNING_RATE = 0.1
 
-# AFTER (student's improvement)
-N_ESTIMATORS  = 200
-MAX_DEPTH     = 5
-LEARNING_RATE = 0.05
+# # AFTER (student's improvement)
+# N_ESTIMATORS  = 200
+# MAX_DEPTH     = 5
+# LEARNING_RATE = 0.05
 
-# AFTER (student's improvement)
+# # AFTER (student's improvement)
 N_ESTIMATORS  = 300
 MAX_DEPTH     = 5
 LEARNING_RATE = 0.05

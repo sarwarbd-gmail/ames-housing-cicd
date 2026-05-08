@@ -1,10 +1,10 @@
-name: Ames Housing – CI/CD
+name: Ames Housing - CI/CD
 
 on:
   push:
-    branches: [main]
+    branches: [zuhair]
   pull_request:
-    branches: [main]
+    branches: [zuhair]
 
 jobs:
 
@@ -65,7 +65,7 @@ jobs:
     name: Deploy model
     runs-on: ubuntu-latest
     needs: train
-    if: github.ref == 'refs/heads/main'   # skip on pull requests
+    if: github.ref == 'refs/heads/zuhair'   # skip on pull requests
 
     steps:
       - name: Checkout code
@@ -83,16 +83,16 @@ jobs:
         run: |
           echo "Deploying model to production..."
           echo "Real deployment options:"
-          echo "  Option A – Docker + Kubernetes:"
+          echo "  Option A - Docker + Kubernetes:"
           echo "    docker build -t housing-model:latest ."
           echo "    docker push your-registry/housing-model:latest"
           echo "    kubectl set image deployment/housing-model app=housing-model:latest"
           echo ""
-          echo "  Option B – AWS Lambda:"
+          echo "  Option B - AWS Lambda:"
           echo "    zip -r model.zip model/ src/predict.py"
           echo "    aws lambda update-function-code --function-name housing-model --zip-file fileb://model.zip"
           echo ""
-          echo "  Option C – Hugging Face Spaces / Streamlit Cloud:"
+          echo "  Option C - Hugging Face Spaces / Streamlit Cloud:"
           echo "    git push to the Spaces repo"
           echo ""
           echo "Deployment complete."
