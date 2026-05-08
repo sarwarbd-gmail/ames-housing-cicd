@@ -28,10 +28,10 @@ N_ESTIMATORS  = 200
 MAX_DEPTH     = 5
 LEARNING_RATE = 0.05
 
-# AFTER (student's improvement)
-N_ESTIMATORS  = 300
-MAX_DEPTH     = 5
-LEARNING_RATE = 0.05
+# AFTER (sumaiya improvement)
+N_ESTIMATORS  = 400
+MAX_DEPTH     = 6
+LEARNING_RATE = 0.01
 
 # ────────────────────────────────────────────────────────────────────────────
 
