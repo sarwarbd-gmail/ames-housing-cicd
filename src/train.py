@@ -24,7 +24,7 @@ MAX_DEPTH     = 4
 LEARNING_RATE = 0.1
 
 # AFTER (student's improvement)
-N_ESTIMATORS  = 200
+N_ESTIMATORS  = 250
 MAX_DEPTH     = 5
 LEARNING_RATE = 0.05
 
