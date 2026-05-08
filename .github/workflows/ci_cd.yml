@@ -1,4 +1,4 @@
-name: Ames Housing – CI/CD
+name: Ames Housing - CI/CD
 
 on:
   push:
@@ -83,16 +83,16 @@ jobs:
         run: |
           echo "Deploying model to production..."
           echo "Real deployment options:"
-          echo "  Option A – Docker + Kubernetes:"
+          echo "  Option A - Docker + Kubernetes:"
           echo "    docker build -t housing-model:latest ."
           echo "    docker push your-registry/housing-model:latest"
           echo "    kubectl set image deployment/housing-model app=housing-model:latest"
           echo ""
-          echo "  Option B – AWS Lambda:"
+          echo "  Option B - AWS Lambda:"
           echo "    zip -r model.zip model/ src/predict.py"
           echo "    aws lambda update-function-code --function-name housing-model --zip-file fileb://model.zip"
           echo ""
-          echo "  Option C – Hugging Face Spaces / Streamlit Cloud:"
+          echo "  Option C - Hugging Face Spaces / Streamlit Cloud:"
           echo "    git push to the Spaces repo"
           echo ""
           echo "Deployment complete."
